@@ -5,3 +5,5 @@ transformers
 gensim
 pandas
 spacy_streamlit
+pytorch
+torchvision
