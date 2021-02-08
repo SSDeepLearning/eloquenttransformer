@@ -7,3 +7,4 @@ spacy_streamlit
 http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
 transformers~=3.1.0
 rake_nltk
+en_core_web_lg
