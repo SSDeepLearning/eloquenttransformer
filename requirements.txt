@@ -4,5 +4,4 @@ textblob
 transformers
 gensim
 pandas
-spacy.cli
 spacy_streamlit
