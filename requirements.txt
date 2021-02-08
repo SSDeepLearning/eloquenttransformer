@@ -1,7 +1,6 @@
 streamlit
 spacy
 textblob
-en_core_web_lg
 transformers
 gensim
 pandas
