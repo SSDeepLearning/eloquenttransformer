@@ -1,10 +1,9 @@
 streamlit
-torch
-torchvision
 spacy
 textblob
 transformers
 gensim
 pandas
 spacy_streamlit
+torch
 
