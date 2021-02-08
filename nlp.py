@@ -3,7 +3,7 @@ import spacy
 from spacy import displacy
 from textblob import TextBlob
 from spacy import displacy
-#import en_core_web_lg
+import en_core_web_lg
 from transformers import pipeline
 import spacy.cli
 from spacy_streamlit import visualize_parser
