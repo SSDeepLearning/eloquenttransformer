@@ -104,7 +104,7 @@ if in_operation=="Translate":
     st.write(translated_text)
 elif in_operation=="Detect Keywords":
     # Keyword Detection is currently not working
-    st.write(rake_keywords(in_text_input))
+    st.write(gensim_keywords(in_text_input, gensim))
 elif in_operation=="Detect Language":
     detected_lang_code=detectLanguage(in_text_input)
     if detected_lang_code=="en":
