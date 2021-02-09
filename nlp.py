@@ -3,7 +3,7 @@ import spacy
 from spacy import displacy
 from textblob import TextBlob
 from spacy import displacy
-import en_core_web_lg
+import en_core_web_sm
 from transformers import pipeline
 import spacy.cli
 from spacy_streamlit import visualize_parser
@@ -41,7 +41,7 @@ def detectLanguage(in_text_input):
 
 def init_model(model_name, operation):
     if model_name=="Spacy":
-        nlp = spacy.load('en_core_web_lg')
+        nlp = spacy.load('en_core_web_sm')
     elif model_name =="Transformer":
         if in_operation=="Sentiment-Analysis":
             nlp = pipeline("sentiment-analysis",device=-1)
