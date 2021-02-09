@@ -8,6 +8,8 @@ from transformers import pipeline
 import spacy.cli
 from spacy_streamlit import visualize_parser
 import gensim 
+from gensim.summarization import keywords
+from gensim.parsing.preprocessing import preprocess_string
 from helpers.helper_functions import find_keywords, rake_keywords, gensim_keywords
 import pandas as pd 
 from pandas import DataFrame 
@@ -104,7 +106,7 @@ if in_operation=="Translate":
     st.write(translated_text)
 elif in_operation=="Detect Keywords":
     # Keyword Detection is currently not working
-    st.write(find_keywords(in_text_input, gensim))
+    st.write(keywords(in_text_input))
 elif in_operation=="Detect Language":
     detected_lang_code=detectLanguage(in_text_input)
     if detected_lang_code=="en":
